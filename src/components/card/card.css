@@ -1,0 +1,24 @@
+
+.card {
+  padding: 2em;
+  flex: 0 0 auto;
+}
+.descriptionC{
+  display: none;
+}
+
+
+.box{
+  display:flex;
+  justify-content: space-between;
+
+}
+@media  screen and (max-width: 768px) {
+  .descriptionC{
+    display: block;
+  }
+  .card{
+    padding: 0.5rem; 
+    width:100%;
+  }
+}

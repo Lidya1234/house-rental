@@ -1,0 +1,21 @@
+.loginpage{
+    min-height: 100vh;
+}
+.contal{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    transform: translateY(40%);
+}
+
+.input{
+    width: 80%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.loginbtn{
+    width: 10rem;
+    height: 30px;
+}

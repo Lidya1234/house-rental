@@ -1,0 +1,42 @@
+.container{
+    min-height: 100vh;
+}
+.singleHouse{
+    height: 80%;
+    margin: 50px auto 0 auto;
+    width: 65%;
+    border: 1px solid gray; 
+    padding: 50px 0;
+    display: flex;
+    box-shadow: 2px 2px grey;
+}
+.card {
+    padding: 0 1em;
+    flex: 0 0 auto;
+    max-height: fit-content;
+    
+  }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+   
+   .card{
+    width: 60%;
+   
+   }
+   .singleHouse{
+    width: 90%;
+   }
+    
+}
+@media screen and (max-width: 768px) {
+    .description{
+        display: none;
+    }
+   .card{
+    width: 100%;
+    margin: auto;
+   }
+   .singleHouse{
+    width: 90%;
+   }
+    
+}

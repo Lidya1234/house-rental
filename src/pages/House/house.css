@@ -1,0 +1,38 @@
+.container{
+  height: 100vh;
+}
+.scrolling-wrapper
+{
+  display: flex;
+  overflow-x: hidden;
+  flex-wrap: wrap;
+  
+}
+.card {
+    padding: 2em;
+    flex: 0 0 auto;
+    
+  }
+.aside{
+    width: 20%;
+    margin: 25px;
+    padding: 15px;
+    float: right;
+    height: 60vh;
+    background-image: linear-gradient(90deg, #099056, gray);
+}
+@media screen and (max-width: 768px){
+    .scrolling-wrapper
+    {
+      
+    overflow-x: auto;
+   flex-wrap: nowrap;
+      
+    }
+    .aside{
+        display:none;
+    }
+    .card {
+        max-width: 345px;
+      }
+}
