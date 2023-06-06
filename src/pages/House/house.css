@@ -1,11 +1,13 @@
 .container{
   height: 100vh;
+
 }
 .scrolling-wrapper
 {
   display: flex;
   overflow-x: hidden;
   flex-wrap: wrap;
+  transform: translateY(10%)
   
 }
 .card {

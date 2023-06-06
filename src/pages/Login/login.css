@@ -1,21 +1,52 @@
 .loginpage{
     min-height: 100vh;
+    /* background-image: linear-gradient(360deg , green, red); */
+    opacity: 0.8;
 }
-.contal{
+.loginDetails, .signupDetails{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 35%;
     margin: auto;
-    transform: translateY(40%);
+    transform: translateY(20%);
+    align-items: center;
+    border: 1px solid gray;
+    padding: 5rem 0 5rem 0;
+    
 }
+.signupDetails{
+    transform: translateY(10%);
+    
+}
+.heading{
+margin-bottom: 2rem;
 
+}
 .input{
-    width: 80%;
+    width: 60%;
     height: 30px;
     border: none;
     border-bottom: 1px solid black;
+    margin: 1.5rem ;
+    color: black;
+   
+}
+.input:focus{
+    outline: none;
 }
 .loginbtn{
     width: 10rem;
     height: 30px;
+    margin-bottom: 1rem;;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .loginDetails, .signupDetails{
+        width: 70%;    
+    }
+}
+@media screen and (max-width: 768px){
+    .loginDetails{
+        width: 90%;
+        transform: translateY(20%);
+    }
 }
