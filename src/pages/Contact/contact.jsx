@@ -1,10 +1,9 @@
 import React, {useState} from 'react'
 import { useDispatch } from 'react-redux'
-import { Link } from 'react-router-dom'
-import './login.css'
-export default function Login() {
+import './contact.css'
+export default function Contact() {
 const [userName, setUserName] = useState('')
-const [password, setPassword] = useState('')
+const [comment, setComment] = useState('')
 const dispatch = useDispatch()
 const handleClick =()=>{
 console.log('hi')
@@ -14,12 +13,10 @@ console.log('hi')
     <div className='loginpage'>
       
       <div className='loginDetails'>
-      <h3 className="heading"><strong>SIGN IN</strong> </h3>
-      <p className="desc">Hello there: sign in and start managing your system</p>
+      <h3 className="heading"><strong>CONTACT US</strong> </h3>
         <input type="text" name='userName' className="input" value={userName} placeholder='Enter user name' onChange={(e)=>setUserName(e.target.value)}/>
-        <input type="password" name='password' className="input" value={password} placeholder="Enter password" onChange={(e)=>setPassword(e.target.value)}/>
+        <input type="textArea" name='comment' className="input inputArea" value={comment} placeholder="Enter your comment here ..." onChange={(e)=>setComment(e.target.value)}/>
         <button type="submit" onClick={handleClick} className="loginbtn">Submit</button>
-        <p> Don't have an account yet <Link to='/signup'>Register</Link></p>
     </div>
     </div>
   )

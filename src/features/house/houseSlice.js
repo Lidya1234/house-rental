@@ -8,7 +8,7 @@ export const fetchHouse = createAsyncThunk('house/fetchHouse', async () => {
    const { data } = await axios.get('https://jsonplaceholder.typicode.com/todos', {
       params:
       {
-         _limit: 1
+         _limit: 10
       }
    })
    console.log(data)

@@ -27,9 +27,9 @@ export default function NavBar() {
      {/* <div className='NavBar'> */}
      <div className={showMenu ? "nav-menu expanded" : "nav-menu"}>
       <ul>
-      <li><Link className='NavItem'>Home</Link></li>
-      <li><Link className='NavItem'>About</Link></li>
-      <li><Link className='NavItem'>Contact us</Link></li>
+      <li><Link to='/' className='NavItem'>Home</Link></li>
+      <li><Link to='./about' className='NavItem'>About</Link></li>
+      <li><Link to='/contact' className='NavItem'>Contact us</Link></li>
       <li><Link to="./login" className='NavItem'>Login</Link></li>
       </ul>
       </div>

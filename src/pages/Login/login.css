@@ -1,7 +1,8 @@
 .loginpage{
     min-height: 100vh;
-    /* background-image: linear-gradient(360deg , green, red); */
+    background-color: rgb(236, 231, 231);
     opacity: 0.8;
+   
 }
 .loginDetails, .signupDetails{
     display: flex;
@@ -12,10 +13,10 @@
     align-items: center;
     border: 1px solid gray;
     padding: 5rem 0 5rem 0;
-    
+    background-color: white
 }
 .signupDetails{
-    transform: translateY(10%);
+    transform: translateY(5%);
     
 }
 .heading{
@@ -29,10 +30,14 @@ margin-bottom: 2rem;
     border-bottom: 1px solid black;
     margin: 1.5rem ;
     color: black;
+    font-size: 18px;
+    background-color: transparent;
+    
    
 }
 .input:focus{
     outline: none;
+    transition: background-color 0.2s ease-in-out;
 }
 .loginbtn{
     width: 10rem;

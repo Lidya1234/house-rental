@@ -1,13 +1,14 @@
 .container{
-  height: 100vh;
-
+  min-height: 100vh;
+ max-width: 97vw;
+ overflow-x: hidden;
 }
 .scrolling-wrapper
 {
   display: flex;
   overflow-x: hidden;
   flex-wrap: wrap;
-  transform: translateY(10%)
+  /* padding: 3% 0; */
   
 }
 .card {
@@ -22,6 +23,15 @@
     float: right;
     height: 60vh;
     background-image: linear-gradient(90deg, #099056, gray);
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  .aside{
+    display: none;
+  }
+  
+.card{
+  max-width: 345px;
+}
 }
 @media screen and (max-width: 768px){
     .scrolling-wrapper

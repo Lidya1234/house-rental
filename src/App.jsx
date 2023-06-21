@@ -5,6 +5,8 @@ import SingleHouse from './pages/SingleHouse/singleHouse'
 import NavBar from './components/NavBar/NavBar'
 import Login from './pages/Login/login'
 import Signup from './pages/Login/signup'
+import About from './pages/About/about'
+import Contact from './pages/Contact/contact'
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Route exact path="singleHouse" element={<SingleHouse />} />
         <Route exact path='login' element={<Login />} />
         <Route exact path='signup' element={<Signup />}/>
+        <Route exact path='about' element={<About />} />
+        <Route exact path='contact' element={<Contact />} />
       </Routes>
       <Footer />
     </BrowserRouter>
